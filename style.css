@@ -18,7 +18,8 @@ body{
 }
 ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 .container{
     width: 420px;
@@ -27,13 +28,20 @@ ul{
     border-radius: 20px;
     margin-bottom: 20px;
 }
-ul{
-    margin: 20px 0;
-}
 li{
     list-style: none;
     color: hsl(217, 12%, 63%);
     cursor: pointer;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(215, 11%, 31%);
+    border-radius: 26px;
+    font-weight: 700;
+    font-size: 16px;
+    
 }
 .header{
     font-size: 24px;
@@ -43,6 +51,7 @@ li{
 }
 .text{
     color: hsl(217, 12%, 63%);
+    font-size: 15px;
 }
 .btn{
     background-color: hsl(25, 97%, 53%);
@@ -56,5 +65,23 @@ li{
     cursor: pointer;
 }
 .star{
-
+    background-color: hsl(215, 11%, 31%);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.img-star{
+    width: 16px;
+    height: 16px;
+}
+li:hover{
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+    transition: 0.3s;
+}
+li:focus{
+    background-color: hsl(25, 97%, 53%);
 }
