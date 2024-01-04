@@ -19,14 +19,20 @@ body{
 ul{
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 32px 0;
 }
 .container{
     width: 420px;
     background-color: hsl(213, 19%, 18%);
-    padding: 24px;
+    padding: 40px 32px;
     border-radius: 20px;
     margin-bottom: 20px;
+    display: block;
+    height: 420px;
+}
+.thx{
+    z-index: 1;
+    display: none;
 }
 li{
     list-style: none;
@@ -44,10 +50,10 @@ li{
     
 }
 .header{
-    font-size: 24px;
+    font-size: 28px;
     color: white;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 32px 0 16px;
 }
 .text{
     color: hsl(217, 12%, 63%);
@@ -56,9 +62,10 @@ li{
 .btn{
     background-color: hsl(25, 97%, 53%);
     width: 100%;
-    padding: 10px 0;
+    padding: 14px 0;
     border: none;
-    border-radius: 16px;
+    border-radius: 24px;
+    font-size: 16px;
     color: white;
     font-weight: 700;
     letter-spacing: 0.2em;
@@ -76,12 +83,39 @@ li{
 .img-star{
     width: 16px;
     height: 16px;
+    
 }
 li:hover{
     background-color: hsl(216, 12%, 54%);
     color: white;
     transition: 0.3s;
 }
-li:focus{
-    background-color: hsl(25, 97%, 53%);
+.active{
+    background-color:hsl(25, 97%, 53%) !important;
+}
+.img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.rating{
+    background-color: hsl(215, 11%, 31%);
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: hsl(25, 97%, 53%);
+    padding: 4px;
+    border-radius: 20px;
+}
+.thankText .header,
+.thankText .text {
+    text-align: center;
+}
+.userRating::before,
+.userRating::after {
+  content: "\00a0";
 }
