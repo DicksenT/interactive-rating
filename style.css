@@ -119,3 +119,25 @@ li:hover{
 .userRating::after {
   content: "\00a0";
 }
+
+@media(max-width: 375px){
+    .container{
+        width: 320px;
+        height: 360px;
+        padding: 22px;
+    }
+    li{
+        width: 40px;
+        height: 40px;
+    }
+    .header,
+    .choices{
+        margin: 20px 0;
+    }
+    .btn{
+        padding: 10px;
+    }
+    .rating{
+        width: 70%;
+    }
+}
